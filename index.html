@@ -121,11 +121,13 @@
     }
     var url = $.getUrlParam('url');
 
-    if (url == null) return ;
-
-	var result = base.decode(url);
-	console.log(result);
-	//跳转
-	window.location.href =  result;
+    if (url == null) {
+    	alert('Url Must Not Empty!!!!');
+    }else{
+		var result = base.decode(url);
+		console.log(result);
+		//跳转
+		window.location.href =  result;    	
+    }
 </script>
 </html>
