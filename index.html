@@ -120,8 +120,12 @@
         if (r != null) return unescape(r[2]); return null;
     }
     var url = $.getUrlParam('url');
+
+    if (url == null) return ;
+
 	var result = base.decode(url);
-	
-	console.log(result);   
+	console.log(result);
+	//跳转
+	window.location.href =  result;
 </script>
 </html>
